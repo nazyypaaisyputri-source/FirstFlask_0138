@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsing Parameter Method POST</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h1>Form Method POST</h1>
+
+        <form method="POST" action="/form-post">
+            <label for="nama_input">Nama Lengkap:</label>
+            <input
+                type="text"
+                id="nama_input"
+                name="nama_input"
+                placeholder="Masukkan nama di sini..."
+            >
+            <button type="submit">Kirim</button>
+        </form>
+
+        {% if pesan_error %}
+            <div class="alert-error">{{ pesan_error }}</div>
+        {% endif %}
+
+        {% if hasil_nama %}
+            <div class="result-box">
+                <p class="result-title">Data Diterima (POST):</p>
+                <p class="result-text">Halo, <strong>{{ hasil_nama }}</strong>! Parameter berhasil diproses.</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
