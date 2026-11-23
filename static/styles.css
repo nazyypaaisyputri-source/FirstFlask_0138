@@ -80,24 +80,3 @@ button:hover {
     border-left: 4px solid #dc2626;
     font-size: 14px;
 }
-
-.result-box {
-    margin-top: 18px;
-    padding: 14px;
-    border-radius: 8px;
-    background-color: #ede9fe;
-    border-left: 4px solid #7e22ce;
-}
-
-.result-title {
-    margin: 0 0 4px 0;
-    font-size: 13px;
-    font-weight: 700;
-    color: #5b21b6;
-}
-
-.result-text {
-    margin: 0;
-    font-size: 15px;
-    color: #2e1065;
-}
