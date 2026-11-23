@@ -12,25 +12,3 @@
 
         <form method="POST" action="/form-post">
             <label for="nama_input">Nama Lengkap:</label>
-            <input
-                type="text"
-                id="nama_input"
-                name="nama_input"
-                placeholder="Masukkan nama di sini..."
-            >
-            <button type="submit">Kirim</button>
-        </form>
-
-        {% if pesan_error %}
-            <div class="alert-error">{{ pesan_error }}</div>
-        {% endif %}
-
-        {% if hasil_nama %}
-            <div class="result-box">
-                <p class="result-title">Data Diterima (POST):</p>
-                <p class="result-text">Halo, <strong>{{ hasil_nama }}</strong>! Parameter berhasil diproses.</p>
-            </div>
-        {% endif %}
-    </div>
-</body>
-</html>
